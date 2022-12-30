@@ -203,7 +203,7 @@ class _homeState extends State<home> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 174),
+                        padding: EdgeInsets.only(right: 174, bottom: 5),
                         child: Text(
                           'CRAFTSMAN HOUSE',
                           style: TextStyle(
