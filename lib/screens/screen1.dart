@@ -18,8 +18,8 @@ class _s1State extends State<s1> {
           ClipOval(
             child: Image.asset(
               'assets/screen1 image.jpg',
-              height: MediaQuery.of(context).size.height * 0.24,
-              width: MediaQuery.of(context).size.width * 0.52,
+              height: 220,
+              width: 220,
               fit: BoxFit.fill,
             ),
           ),
@@ -31,7 +31,7 @@ class _s1State extends State<s1> {
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height * 0.07,
+            height: 65,
             width: MediaQuery.of(context).size.width * 0.9,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -53,7 +53,7 @@ class _s1State extends State<s1> {
           Padding(
             padding: EdgeInsets.only(top: 20, bottom: 20),
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.07,
+              height: 65,
               width: MediaQuery.of(context).size.width * 0.9,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
@@ -77,7 +77,7 @@ class _s1State extends State<s1> {
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height * 0.07,
+            height: 65,
             width: MediaQuery.of(context).size.width * 0.9,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -125,7 +125,7 @@ class _s1State extends State<s1> {
             ),
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.07,
+            height: 65,
             width: MediaQuery.of(context).size.width * 0.95,
             child: OutlinedButton(
               onPressed: () {

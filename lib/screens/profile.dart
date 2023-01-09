@@ -81,8 +81,8 @@ class _pofilescreenState extends State<pofilescreen> {
                 child: ClipOval(
                   child: Image.asset(
                     'assets/profileimage.webp',
-                    height: MediaQuery.of(context).size.height * 0.24,
-                    width: MediaQuery.of(context).size.width * 0.52,
+                    height: 220,
+                    width: 220,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -123,7 +123,7 @@ class _pofilescreenState extends State<pofilescreen> {
                     )),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.07,
+                height: 65,
                 width: MediaQuery.of(context).size.width * 0.95,
                 child: OutlinedButton(
                   onPressed: () {

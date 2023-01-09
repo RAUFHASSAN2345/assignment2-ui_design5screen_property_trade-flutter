@@ -29,7 +29,7 @@ class _buypageState extends State<buypage> {
                   Padding(
                     padding: EdgeInsets.only(right: 20),
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.08,
+                      height: 70,
                       width: MediaQuery.of(context).size.width * 0.17,
                       decoration: BoxDecoration(
                           color: Color.fromARGB(255, 215, 215, 215),
@@ -57,7 +57,7 @@ class _buypageState extends State<buypage> {
                 child: Image.asset(
                   'assets/houseimage.jpg',
                   width: MediaQuery.of(context).size.width * 0.90,
-                  height: MediaQuery.of(context).size.height * 0.36,
+                  height: 310,
                   fit: BoxFit.fill,
                 ),
               ),
@@ -67,9 +67,10 @@ class _buypageState extends State<buypage> {
               child: Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(top: 20, bottom: 5, right: 13),
+                        padding: EdgeInsets.only(top: 20, bottom: 5),
                         child: Text(
                           'CRAFTSMAN HOUSE',
                           style: TextStyle(
@@ -184,7 +185,7 @@ class _buypageState extends State<buypage> {
                       decoration: BoxDecoration(
                           color: Color.fromARGB(255, 2, 28, 41),
                           borderRadius: BorderRadius.circular(10)),
-                      height: MediaQuery.of(context).size.height * 0.05,
+                      height: 40,
                       width: MediaQuery.of(context).size.width * 0.2,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -236,7 +237,7 @@ class _buypageState extends State<buypage> {
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
                     'assets/galleryi1.png',
-                    height: MediaQuery.of(context).size.height * 0.09,
+                    height: 80,
                     width: MediaQuery.of(context).size.width * 0.19,
                     fit: BoxFit.fill,
                   ),
@@ -245,7 +246,7 @@ class _buypageState extends State<buypage> {
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
                     'assets/galleryi2.jpg',
-                    height: MediaQuery.of(context).size.height * 0.09,
+                    height: 80,
                     width: MediaQuery.of(context).size.width * 0.19,
                     fit: BoxFit.fill,
                   ),
@@ -254,7 +255,7 @@ class _buypageState extends State<buypage> {
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
                     'assets/galleryi3.jpg',
-                    height: MediaQuery.of(context).size.height * 0.09,
+                    height: 80,
                     width: MediaQuery.of(context).size.width * 0.19,
                     fit: BoxFit.fill,
                   ),
@@ -265,7 +266,7 @@ class _buypageState extends State<buypage> {
                       borderRadius: BorderRadius.circular(10),
                       child: Image.asset(
                         'assets/galleryi4.jpg',
-                        height: MediaQuery.of(context).size.height * 0.09,
+                        height: 80,
                         width: MediaQuery.of(context).size.width * 0.19,
                         fit: BoxFit.fill,
                       ),

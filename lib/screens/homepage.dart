@@ -9,9 +9,9 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
-  functon(t, contcolr, texcolr, hight, widh) {
+  functon(t, contcolr, texcolr, widh) {
     return Container(
-      height: hight,
+      height: 45,
       width: widh,
       decoration: BoxDecoration(
           color: contcolr, borderRadius: BorderRadius.circular(10)),
@@ -140,19 +140,16 @@ class _homeState extends State<home> {
                   'House',
                   Color.fromARGB(255, 2, 28, 41),
                   Color.fromARGB(255, 215, 215, 215),
-                  MediaQuery.of(context).size.height * 0.05,
                   MediaQuery.of(context).size.width * 0.2),
               functon(
                   'Apartement',
                   Color.fromARGB(255, 215, 215, 215),
                   Color.fromARGB(255, 2, 28, 41),
-                  MediaQuery.of(context).size.height * 0.05,
                   MediaQuery.of(context).size.width * 0.3),
               functon(
                   'Flot',
                   Color.fromARGB(255, 215, 215, 215),
                   Color.fromARGB(255, 2, 28, 41),
-                  MediaQuery.of(context).size.height * 0.05,
                   MediaQuery.of(context).size.width * 0.2)
             ],
           ),
@@ -175,7 +172,7 @@ class _homeState extends State<home> {
             child: Stack(
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.48,
+                  height: 423,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
@@ -193,7 +190,7 @@ class _homeState extends State<home> {
                     child: Image.asset(
                       'assets/houseimage.jpg',
                       width: MediaQuery.of(context).size.width * 0.90,
-                      height: MediaQuery.of(context).size.height * 0.34,
+                      height: 310,
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -201,9 +198,10 @@ class _homeState extends State<home> {
                 Padding(
                   padding: EdgeInsets.only(top: 330, left: 25),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 174, bottom: 5),
+                        padding: EdgeInsets.only(bottom: 5),
                         child: Text(
                           'CRAFTSMAN HOUSE',
                           style: TextStyle(
@@ -212,14 +210,11 @@ class _homeState extends State<home> {
                               fontWeight: FontWeight.w500),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(right: 157),
-                        child: Text(
-                          '520 N Btoudry Ave Los Angeles',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 18,
-                          ),
+                      Text(
+                        '520 N Btoudry Ave Los Angeles',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 18,
                         ),
                       ),
                       Row(
@@ -293,7 +288,7 @@ class _homeState extends State<home> {
             child: Stack(
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.13,
+                  height: 120,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
@@ -304,27 +299,25 @@ class _homeState extends State<home> {
                   child: Image.asset(
                     'assets/housei2.jpg',
                     fit: BoxFit.fill,
-                    height: MediaQuery.of(context).size.height * 0.13,
+                    height: 120,
                     width: MediaQuery.of(context).size.width * 0.3,
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 130, top: 25),
+                  padding: EdgeInsets.only(left: 130, top: 30),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(right: 165),
-                        child: Text(
-                          'Ranch Home',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 3, 51, 75),
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                          ),
+                      Text(
+                        'Ranch Home',
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 3, 51, 75),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 5, right: 50),
+                        padding: EdgeInsets.only(top: 5),
                         child: Text(
                           '520 N Btoudry Ave Los Angeles',
                           style: TextStyle(

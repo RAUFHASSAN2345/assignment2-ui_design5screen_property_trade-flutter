@@ -9,6 +9,15 @@ class siginpage extends StatefulWidget {
 }
 
 class _siginpageState extends State<siginpage> {
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
+  login() {
+    if (email.text == 'email' && password.text == 'password') {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => pofilescreen()));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,8 +39,8 @@ class _siginpageState extends State<siginpage> {
             ClipOval(
               child: Image.asset(
                 'assets/signinimage.jpg',
-                height: MediaQuery.of(context).size.height * 0.24,
-                width: MediaQuery.of(context).size.width * 0.52,
+                height: 220,
+                width: 220,
                 fit: BoxFit.fill,
               ),
             ),
@@ -45,6 +54,7 @@ class _siginpageState extends State<siginpage> {
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.9,
               child: TextField(
+                controller: email,
                 decoration: InputDecoration(
                     fillColor: Color.fromARGB(255, 239, 237, 237),
                     filled: true,
@@ -68,6 +78,8 @@ class _siginpageState extends State<siginpage> {
             SizedBox(
                 width: MediaQuery.of(context).size.width * 0.9,
                 child: TextField(
+                  controller: password,
+                  obscureText: true,
                   decoration: InputDecoration(
                       fillColor: Color.fromARGB(255, 239, 237, 237),
                       filled: true,
@@ -109,14 +121,11 @@ class _siginpageState extends State<siginpage> {
             Padding(
               padding: EdgeInsets.only(top: 20, bottom: 20),
               child: SizedBox(
-                height: MediaQuery.of(context).size.height * 0.07,
+                height: 65,
                 width: MediaQuery.of(context).size.width * 0.95,
                 child: OutlinedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: ((context) => pofilescreen())));
+                    login();
                   },
                   child: Text(
                     'Sign in',
@@ -170,8 +179,8 @@ class _siginpageState extends State<siginpage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.09,
-                  width: MediaQuery.of(context).size.width * 0.2,
+                  height: 82,
+                  width: 85,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.white70),
@@ -179,8 +188,8 @@ class _siginpageState extends State<siginpage> {
                 ),
                 SizedBox(width: 20),
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.09,
-                  width: MediaQuery.of(context).size.width * 0.2,
+                  height: 82,
+                  width: 85,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.white70),
@@ -191,8 +200,8 @@ class _siginpageState extends State<siginpage> {
                 ),
                 SizedBox(width: 20),
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.09,
-                  width: MediaQuery.of(context).size.width * 0.2,
+                  height: 82,
+                  width: 85,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.white70),
